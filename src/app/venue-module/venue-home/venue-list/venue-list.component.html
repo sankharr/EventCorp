@@ -27,7 +27,7 @@
             <mat-slider class="age-slider" max="3000" min="0" step="1" thumbLabel="true" (ngModel)="ageValue"
               (change)="rangeChange($event)">
             </mat-slider>
-            <span> 2000</span>
+            <span> 3000</span>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@
           </div>
           <div class="col col-md-5 text-col">
             <h5 class="mb-1">{{item.payload.doc.data().v_name}}</h5>
-            <small>{{item.payload.doc.data().fee}}</small>
+            <small>Booking Fee Rs.{{item.payload.doc.data().fee}}</small>
           </div>
           <div class="col col-md-6 actions-col">
             <button class="btn btn-outline-primary action" (click)="viewDetails(item)" type="button">Profile</button>
